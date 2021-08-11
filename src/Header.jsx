@@ -30,16 +30,18 @@ export const Header =
 					<SearchIcon className="header_searchIcon" />
 				</div>
 				<div className="header_nav">
-					<div className="header_option">
-						<span className="header_lineOne">
-							Hello
-							guest
-						</span>
-						<span className="header_lineTwo">
-							Sign
-							in
-						</span>
-					</div>
+					<Link to="/login">
+						<div className="header_option">
+							<span className="header_lineOne">
+								Hello
+								guest
+							</span>
+							<span className="header_lineTwo">
+								Sign
+								in
+							</span>
+						</div>
+					</Link>
 					<div className="header_option">
 						<span className="header_lineOne">
 							Featuers

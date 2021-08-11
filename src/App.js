@@ -8,17 +8,22 @@ import {
 } from "react-router-dom";
 
 import Checkout from "./Checkout";
+import { Login } from "./Login";
 
 function App() {
 	return (
 		<Router>
 			<div className="app">
-				<Header />
 				<Switch>
+					<Route path="/login">
+						<Login />
+					</Route>
 					<Route path="/checkout">
+						<Header />
 						<Checkout />
 					</Route>
 					<Route path="/">
+						<Header />
 						<Home />
 					</Route>
 				</Switch>

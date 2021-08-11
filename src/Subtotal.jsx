@@ -26,8 +26,8 @@ export const Subtotal =
 										(
 										{
 											basket?.length
-										}
-										items):{" "}
+										}{" "}
+										items):
 										<strong>
 											{
 												value
