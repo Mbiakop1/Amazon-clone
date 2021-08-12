@@ -9,8 +9,9 @@ export const Checkout =
 		const [
 			{
 				basket,
-				dispatch,
+				user,
 			},
+			dispatch,
 		] =
 			useStateValue();
 		return (
@@ -22,6 +23,12 @@ export const Checkout =
 						alt="banner"
 					/>
 					<div className="div">
+						<h4>
+							Hello,{" "}
+							{
+								user?.email
+							}
+						</h4>
 						<h2 className="checkout_title">
 							{" "}
 							Your

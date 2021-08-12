@@ -15,10 +15,6 @@ function Product({
 		dispatch,
 	] =
 		useStateValue();
-
-	console.log(
-		basket,
-	);
 	const addToBasket =
 		() => {
 			// dispatch the into the data layer

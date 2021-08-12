@@ -10,6 +10,11 @@
     max-height: 400px;
     min-width: 100px;
     padding: 20px;
+    transition: transform ease-in-out .5s;
+}
+
+.product:hover {
+    transform: scale(1.06);
 }
 
 .product>img {

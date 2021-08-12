@@ -2,10 +2,16 @@ import "./Login.css";
 import React, {
 	useState,
 } from "react";
-import { Link } from "react-router-dom";
+import {
+	Link,
+	useHistory,
+} from "react-router-dom";
+import { auth } from "./firebase";
 
 export const Login =
 	() => {
+		const history =
+			useHistory();
 		const [
 			email,
 			setEmail,
@@ -22,11 +28,59 @@ export const Login =
 		) => {
 			e.preventDefault();
 			//    login with firebase
+			auth
+				.signInWithEmailAndPassword(
+					email,
+					password,
+				)
+				.then(
+					(
+						auth,
+					) => {
+						history.push(
+							"/",
+						);
+					},
+				)
+				.catch(
+					(error) =>
+						alert(
+							error.message,
+						),
+				);
 		};
 		const register =
 			(e) => {
 				e.preventDefault();
 				//    register with firebase
+				auth
+					.createUserWithEmailAndPassword(
+						email,
+						password,
+					)
+					.then(
+						(
+							auth,
+						) => {
+							// firebase successfully created a new user with email and password
+
+							if (
+								auth
+							) {
+								history.push(
+									"/",
+								);
+							}
+						},
+					)
+					.catch(
+						(
+							error,
+						) =>
+							alert(
+								error.message,
+							),
+					);
 			};
 
 		return (
