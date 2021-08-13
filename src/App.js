@@ -12,6 +12,7 @@ import { Login } from "./Login";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { useEffect } from "react";
+import { Payment } from "./Payment";
 
 function App() {
 	const [
@@ -53,6 +54,10 @@ function App() {
 				<Switch>
 					<Route path="/login">
 						<Login />
+					</Route>
+					<Route path="/payment">
+						<Header />
+						<Payment />
 					</Route>
 					<Route path="/checkout">
 						<Header />
