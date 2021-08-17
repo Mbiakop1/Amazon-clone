@@ -33,3 +33,7 @@
 .payment_address {
     margin-left: 30px;
 }
+
+.payment_details {
+    flex: 0.8;
+}

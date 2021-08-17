@@ -1,0 +1,52 @@
+.container h4 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    margin: 6px 0 14px 0;
+    white-space: nowrap;
+}
+
+.owner a {
+    color: #DDD;
+    margin: 5px 0px;
+    text-decoration: none;
+}
+
+.owner {
+    color: #DDD;
+}
+
+.owner a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    min-height: 400px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.befor {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 0px 30px;
+}
+
+.container a {
+    color: #DDD;
+    display: block;
+    margin: 5px 0px;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}

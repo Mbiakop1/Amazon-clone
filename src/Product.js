@@ -62,7 +62,7 @@ function Product({
 				</div>
 			</div>
 			<img
-				src="https://images-na.ssl-images-amazon.com/images/I/91J9pb2yEyL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+				src={image}
 				alt="product image"
 			/>
 			<button

@@ -1,0 +1,96 @@
+[debug] [2021-08-14T09:00:04.857Z] ----------------------------------------------------------------------
+[debug] [2021-08-14T09:00:04.876Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\clinton\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-08-14T09:00:04.877Z] CLI Version:   9.16.0
+[debug] [2021-08-14T09:00:04.877Z] Platform:      win32
+[debug] [2021-08-14T09:00:04.878Z] Node Version:  v14.15.5
+[debug] [2021-08-14T09:00:05.063Z] Time:          Sat Aug 14 2021 10:00:04 GMT+0100 (West Africa Standard Time)
+[debug] [2021-08-14T09:00:05.064Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-14T09:00:05.398Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-14T09:00:05.399Z] > authorizing via signed-in user (mbiakopclinton@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2021-08-14T09:00:05.721Z] [hub] writing locator at C:\Users\clinton\AppData\Local\Temp\hub-clon-12f6a.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@14 from host."}}
+[debug] [2021-08-14T09:00:11.139Z] defaultcredentials: writing to file C:\Users\clinton\AppData\Roaming\firebase\mbiakopclinton_gmail_com_application_default_credentials.json
+[debug] [2021-08-14T09:00:11.143Z] Setting GAC to C:\Users\clinton\AppData\Roaming\firebase\mbiakopclinton_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\clinton\\AppData\\Roaming\\firebase\\mbiakopclinton_gmail_com_application_default_credentials.json"}}
+[debug] [2021-08-14T09:00:11.149Z] > refreshing access token with scopes: []
+[debug] [2021-08-14T09:00:11.153Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-14T09:00:33.728Z] <<< HTTP RESPONSE 200 {"date":"Sat, 14 Aug 2021 09:00:32 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-14T09:00:33.874Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clon-12f6a/adminSdkConfig [none]
+[debug] [2021-08-14T09:00:59.245Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clon-12f6a/adminSdkConfig 200
+[debug] [2021-08-14T09:00:59.246Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clon-12f6a/adminSdkConfig {"projectId":"clon-12f6a","storageBucket":"clon-12f6a.appspot.com"}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2021-08-14T09:00:59.362Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-08-14T09:00:59.363Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-08-14T09:00:59.363Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\clinton\\.cache\\firebase\\emulators\\ui-v1.6.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\clinton\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-08-14T09:00:59.755Z] Web / API server started at localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4001\n"}}
+[info] i  functions: Watching "D:\react\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\react\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2021-08-14T09:01:00.089Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-08-14T09:01:00.089Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-08-14T09:01:00.090Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-08-14T09:01:00.093Z] [worker-~diagnostic~-ca40f666-8c7f-468f-835a-ca18224ae75c]: Assigning socketPath: \\?\pipe\D:\react\amazon-clone\functions\11628 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-ca40f666-8c7f-468f-835a-ca18224ae75c]: Assigning socketPath: \\\\?\\pipe\\D:\\react\\amazon-clone\\functions\\11628"}}
+[debug] [2021-08-14T09:01:00.095Z] [worker-~diagnostic~-ca40f666-8c7f-468f-835a-ca18224ae75c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-ca40f666-8c7f-468f-835a-ca18224ae75c]: BUSY"}}
+[debug] [2021-08-14T09:01:00.649Z] [runtime-status] [11628] Functions runtime initialized. {"cwd":"D:\\react\\amazon-clone\\functions","node_version":"14.15.5"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Functions runtime initialized. {\"cwd\":\"D:\\\\react\\\\amazon-clone\\\\functions\",\"node_version\":\"14.15.5\"}"}}
+[debug] [2021-08-14T09:01:00.650Z] [runtime-status] [11628] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Disabled runtime features: undefined"}}
+[debug] [2021-08-14T09:01:00.672Z] [runtime-status] [11628] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.0","resolution":"D:\\react\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.11.0\",\"resolution\":\"D:\\\\react\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2021-08-14T09:01:00.680Z] [runtime-status] [11628] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.2","resolution":"D:\\react\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.2\",\"resolution\":\"D:\\\\react\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-08-14T09:01:00.684Z] [runtime-status] [11628] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.2","resolution":"D:\\react\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.2\",\"resolution\":\"D:\\\\react\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-08-14T09:01:00.690Z] [runtime-status] [11628] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2021-08-14T09:01:00.693Z] [runtime-status] [11628] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.2","resolution":"D:\\react\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.2\",\"resolution\":\"D:\\\\react\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-08-14T09:01:01.135Z] [runtime-status] [11628] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Checked functions.config() {\"config\":{}}"}}
+[debug] [2021-08-14T09:01:01.135Z] [runtime-status] [11628] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.2","resolution":"D:\\react\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.15.2\",\"resolution\":\"D:\\\\react\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2021-08-14T09:01:01.137Z] [runtime-status] [11628] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.2","resolution":"D:\\react\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.2\",\"resolution\":\"D:\\\\react\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-08-14T09:01:01.140Z] [runtime-status] [11628] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.0","resolution":"D:\\react\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.11.0\",\"resolution\":\"D:\\\\react\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2021-08-14T09:01:01.142Z] [runtime-status] [11628] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.2","resolution":"D:\\react\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.2\",\"resolution\":\"D:\\\\react\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-08-14T09:01:01.143Z] [runtime-status] [11628] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.0","resolution":"D:\\react\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [11628] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.11.0\",\"resolution\":\"D:\\\\react\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[warn] !  Error: Cannot find module 'stripe'
+Require stack:
+- D:\react\amazon-clone\functions\index.js
+- C:\Users\clinton\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\react\amazon-clone\functions\index.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19) {"metadata":{"emulator":{"name":"functions"},"message":"Error: Cannot find module 'stripe'\nRequire stack:\n- D:\\react\\amazon-clone\\functions\\index.js\n- C:\\Users\\clinton\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (D:\\react\\amazon-clone\\functions\\index.js:5:16)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2021-08-14T09:01:02.512Z] [worker-~diagnostic~-ca40f666-8c7f-468f-835a-ca18224ae75c]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-ca40f666-8c7f-468f-835a-ca18224ae75c]: exited"}}
+[debug] [2021-08-14T09:01:02.512Z] [worker-~diagnostic~-ca40f666-8c7f-468f-835a-ca18224ae75c]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-ca40f666-8c7f-468f-835a-ca18224ae75c]: FINISHED"}}
+[debug] [2021-08-14T11:20:01.826Z] ----------------------------------------------------------------------
+[debug] [2021-08-14T11:20:01.844Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\clinton\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-08-14T11:20:01.847Z] CLI Version:   9.16.0
+[debug] [2021-08-14T11:20:01.848Z] Platform:      win32
+[debug] [2021-08-14T11:20:01.849Z] Node Version:  v14.15.5
+[debug] [2021-08-14T11:20:01.856Z] Time:          Sat Aug 14 2021 12:20:01 GMT+0100 (West Africa Standard Time)
+[debug] [2021-08-14T11:20:01.857Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-14T11:20:02.204Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-14T11:20:02.204Z] > authorizing via signed-in user (mbiakopclinton@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[warn] !  hub: emulator hub unable to start on port 4400, starting on 4401 instead. {"metadata":{"emulator":{"name":"hub"},"message":"emulator hub unable to start on port 4400, starting on 4401 instead."}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clon-12f6a. This may result in unexpected behavior. 
+[debug] [2021-08-14T11:20:02.363Z] [hub] writing locator at C:\Users\clinton\AppData\Local\Temp\hub-clon-12f6a.json
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[warn] !  functions: Port 5001 is not open on localhost, could not start Functions Emulator. {"metadata":{"emulator":{"name":"functions"},"message":"Port 5001 is not open on localhost, could not start Functions Emulator."}}
+[warn] !  functions: To select a different host/port, specify that host/port in a firebase.json config file:
+      {
+        // ...
+        "emulators": {
+          "functions": {
+            "host": "HOST",
+            "port": "PORT"
+          }
+        }
+      } {"metadata":{"emulator":{"name":"functions"},"message":"To select a different host/port, specify that host/port in a firebase.json config file:\n      {\n        // ...\n        \"emulators\": {\n          \"functions\": {\n            \"host\": \"\u001b[33mHOST\u001b[39m\",\n            \"port\": \"\u001b[33mPORT\u001b[39m\"\n          }\n        }\n      }"}}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[error] 
+[error] Error: Could not start Functions Emulator, port taken.
