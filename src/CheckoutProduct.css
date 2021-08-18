@@ -45,4 +45,9 @@
         flex-direction: column;
         width: 80vw;
     }
+    .checkoutProduct_title {
+        font-size: 15px;
+        font-weight: 700;
+        width: 80%;
+    }
 }
