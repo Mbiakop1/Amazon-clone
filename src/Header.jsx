@@ -1,4 +1,6 @@
-import React from "react";
+import React, {
+	useState,
+} from "react";
 import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import { ShoppingBasket } from "@material-ui/icons";
@@ -22,6 +24,14 @@ export const Header =
 			() => {
 				auth.signOut();
 			};
+
+		const [
+			active,
+			setActive,
+		] =
+			useState(
+				false,
+			);
 		return (
 			<div className="header">
 				<div className="contain1">
@@ -32,14 +42,27 @@ export const Header =
 							alt="Amazon logo"
 						/>
 					</Link>
-					<div className="menu_icon">
+					<div
+						onClick={() =>
+							setActive(
+								!active,
+							)
+						}
+						className="menu_icon"
+					>
 						<MenuIcon
 							fontSize="large"
 							className="menu"
 						/>
 					</div>
 				</div>
-				<div className="contain">
+				<div
+					className={`contain ${
+						active
+							? "toggle_menu"
+							: ""
+					}`}
+				>
 					<div className="header_search">
 						<input
 							className="header_searchInput"
@@ -56,6 +79,11 @@ export const Header =
 							}
 						>
 							<div
+								onClick={() =>
+									setActive(
+										!active,
+									)
+								}
 								onClick={
 									handleAuthentication
 								}
@@ -93,7 +121,14 @@ export const Header =
 							</span>
 						</div>
 						<Link to="/checkout">
-							<div className="header_optionBasket">
+							<div
+								onClick={() =>
+									setActive(
+										!active,
+									)
+								}
+								className="header_optionBasket"
+							>
 								<ShoppingBasket />
 								<span className="header_lineTwo header_basketCount">
 									{

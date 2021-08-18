@@ -134,9 +134,10 @@
     }
     .contain {
         flex-direction: column;
+        display: none;
     }
     .toggle_menu {
-        display: none;
+        display: initial;
     }
     /* .contain, .contain *, .header_search, .header_search *, */
 }
