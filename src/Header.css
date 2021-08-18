@@ -2,10 +2,12 @@
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #131921;
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
 }
 
 .header_searchInput {
@@ -28,6 +30,13 @@
     flex: 1;
     align-items: center;
     border-radius: 24px;
+}
+
+.contain {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header_searchIcon {
@@ -66,4 +75,68 @@
 
 .header_basketCount {
     margin: 0 10px;
+}
+
+.menu {
+    color: #fff;
+}
+
+.menu_icon {
+    display: none;
+}
+
+
+/*  responsive */
+
+@media screen and (max-width: 450px) {
+    .header {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: inherit;
+        height: auto;
+    }
+    .header_logo {
+        margin: 18px 0px 0px 0px;
+        margin-top: 18px;
+    }
+    .header_search {
+        flex: unset;
+        margin-bottom: 20px;
+    }
+    .header_nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .header_lineOne {
+        font-size: 16px;
+    }
+    .header_lineTwo {
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .header_nav a {
+        margin: 10px 0px;
+    }
+    .header_option {
+        margin: 10px 0px;
+    }
+    /* toggle menu */
+    .menu_icon {
+        display: initial;
+    }
+    .contain1 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .contain {
+        flex-direction: column;
+    }
+    .toggle_menu {
+        display: none;
+    }
+    /* .contain, .contain *, .header_search, .header_search *, */
 }

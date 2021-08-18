@@ -10,12 +10,13 @@
 
 .owner a {
     color: #DDD;
-    margin: 5px 0px;
+    margin: 2px 0px;
     text-decoration: none;
 }
 
 .owner {
     color: #DDD;
+    margin-bottom: 20px;
 }
 
 .owner a:hover {
@@ -28,16 +29,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 95vw;
+    /* media query*/
+    align-self: center;
 }
 
 .befor {
-    padding: 50px 0px;
+    padding: 30px 0px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .container {
-    margin: 0px 30px;
+    margin: 0px 10px;
 }
 
 .container a {

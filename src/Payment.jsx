@@ -251,11 +251,11 @@ export const Payment =
 									handleSubmit
 								}
 							>
-								<CardElement
+								{/* <CardElement
 									onChange={
 										handleChange
 									}
-								/>
+								/> */}
 								<div className="payment_priceContainer">
 									<CurrencyFormat
 										renderText={(

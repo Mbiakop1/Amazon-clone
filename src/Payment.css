@@ -21,8 +21,9 @@
     border-bottom: 1px solid lightgray;
 }
 
-.pament_title {
+.payment_title {
     flex: 0.2;
+    margin: 10px !important;
 }
 
 .payment_items,
